@@ -23,7 +23,6 @@ a:visited{
 
 }
 
-
 #navBar{
     background-color: black;
     display: inline-block;
@@ -83,4 +82,16 @@ footer{
     display: grid;
     justify-content: center;
   
+  }
+
+  /* this is where the reservation page starts */
+
+  #formContainer{
+    display: flex;
+    justify-content: center;
+    background-color:red;
+    width: 440px;
+    height: 300px;
+    line-height: 140%;
+
   }

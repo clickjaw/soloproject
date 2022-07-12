@@ -1,0 +1,11 @@
+body{
+    background-color: gray;
+    display: grid;
+}
+
+#homeBodyContainer{
+   display:grid;
+   justify-content:center;
+    background-color:red;
+    color:white;
+}

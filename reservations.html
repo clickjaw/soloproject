@@ -18,7 +18,39 @@
     
         <div id = "mainContainer">
             <div id = "homeBodyContainer">
-                
+                <div id = "formContainer">
+                <form method = "POST" action = "./reservations.js" id = "reservation-form">
+                    <label for = "last-name">Last Name</label><br>
+                    <input type = "text" id = "last-name" name = "last-name"><br>
+                    <label for = "number-people">Number of People</label>
+                    <select id = "number-people" name = "number-people">
+                        <option value = 1>1</option>
+                        <option value = 2>2</option>
+                        <option value = 3>3</option>
+                        <option value = 4>4</option>
+                        <option value = 5>5</option>
+                        <option value = 6>6</option>
+                        <option value = 7>7</option>
+                        <option value = 8>8</option>
+                    </select><br>
+                    <label for = "time">Time</label>
+                    <select id = "time" name = "time">
+                        <option value = 5>5:00</option>
+                        <option value = 5.5>5:30</option>
+                        <option value = 6>6:00</option>
+                        <option value = 6.5>6:30</option>
+                        <option value = 7>7:00</option>
+                        <option value = 7.5>7:30</option>
+                        <option value = 8>8:00</option>
+                    </select><br>
+                    <label for = "date">Date</label><br>
+                    <input type = "date" id = "date" name = "date">
+                     <input type = "submit" id = "submit-button" value = "Submit" onclick = "reservationData()">
+                </form>
+                </div> <!--end of formContainer-->
+
+
+
             </div>
 
 
@@ -32,5 +64,6 @@
         Midtown 
     </footer>
 </body>
-<script src = "app.js"></script>
+<script src = "./reservations.js"></script>
+<script src = "./userData.js"></script>
 </html>
