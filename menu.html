@@ -16,15 +16,86 @@
             <a href = "about.html">about</a>
         </div>
     
-        <div id = "mainContainer">
-            <div id = "homeBodyContainer">
-                menu
+    <div id = "mainContainer">
+         <div id = "homeBodyContainer">
+                <div id = "buttonRow">
+                    <button onclick = "cocktailFunction()" id = "cocktailButton" class = "button cocktails">cocktails</button>
+                       
+                    <button onclick = "appFunction()" id = "appButton" class ="button appetizers">appetizers</button>
+                
+                    <button onclick = "entreeFunction()" id ="entreeButton" class ="button entrees">entrees</button>
+                    
+                    <button onclick = "dessertFunction()" id = "dessertMenu" class ="button desserts">desserts</button>
+                    
+            
+        
+                </div>
+                    <div id = "menuContainer">
+                        <div id = "cocktailDiv" style = "display:block">
+                        <h1>cocktails</h1>
+                        <ul>
+                        <li>Bee's Knees</li>
+                            gin, lemon, lavender honey
+                        <li>French 75</li>
+                            gin, lemon, champagne
+                        <li>Manhattan</li>
+                            rye, sweet vermouth, grand marnier, bitters
+                        <li>Sazarac</li>
+                            rye, peychaud's, angostura, absinthe, sugar
+                        <li>Negroni</li>
+                            rye, campari, sweet vermouth
+                        <li>Aviation</li>
+                            gin, lemon, luxardo liquer, creme de violette
+
+                        </ul>
+                        </div>
+
+                        <div id = "appDiv" style = "display:none">
+                            <h1>appetizers</h1>
+                            <ul>
+                                <li>calamari</li>
+                                <li>mussels</li>
+                                <li>pate</li>
+                            </ul>
+                        </div>
+
+                        <div id = "entreeDiv" style = "display:none">
+                            <h1>entree</h1>
+                            <ul>
+                                <li>Coq au vin</li>
+                                    chicken quarter in red wine sauce
+                                <li>Corvina</li>
+                                    with risotto and beurre blanc
+                            </ul>
+                        </div>
+
+                        <div id = "dessertDiv" style = "display:none">
+                            <h1>desserts</h1>
+                            <ul>
+                                <li>cheesecake</li>
+                                <li>profiteroles</li>
+                                <li>brulee</li>
+                            </ul>
+                        </div>
+
+
+
+
+
+                    </div>
+
             </div>
 
 
+        </div>
 
 
-        </div> <!--mainContainer div end-->
+
+
+
+
+
+    </div> <!--mainContainer div end-->
 
 <hr>
 
@@ -32,5 +103,5 @@
         Midtown 
     </footer>
 </body>
-<script src = "app.js"></script>
+<script src = "menu.js"></script>
 </html>
