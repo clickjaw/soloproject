@@ -1,11 +1,59 @@
 body{
     background-color: gray;
     display: grid;
+    font-family:Arial, Helvetica, sans-serif;
+    display:grid;
+    justify-content: center;
 }
+
+a:link{
+    text-decoration: none;
+    transition: all 0.5s ease-out;
+}
+a:hover{
+    color:black;
+    text-decoration: underline;
+    text-decoration-color:red;
+}
+
+a:visited{
+    text-decoration: underline;
+    text-decoration-color:red;
+    color:black;
+}
+
 
 #homeBodyContainer{
    display:grid;
    justify-content:center;
-    background-color:red;
+   padding-top: 3vh;
+   width:500px;
+    background-color:black;
     color:white;
+}
+#userNavBar{
+    display:inline;
+    word-spacing: 150px;    
+}
+#userTableContainer{
+    display:flex;
+    flex-direction:row;
+    
+}
+.userHeader{
+    word-spacing: 50px;
+}
+
+table,th,tbody{
+
+    border: 1px solid;
+    letter-spacing: 2px;
+}
+
+td{
+    border: 2px solid;
+    height:30px;
+    padding:20px;
+    min-width:10px;
+    text-align:center;
 }

@@ -17,13 +17,31 @@
         </div>
     
         <div id = "mainContainer">
-            <div id = "homeBodyContainer">
-                history goes here<br>
+            <div id = "aboutUsContainer">
+                <div id = "buttonRow">
+                    <button onclick = "historyFunction()" id = "historyButton" class = "button history">history</button>
 
-                memphis magazine article goes here<br>
- 
-                social site links here<br>
-                <a href="userData.html"><button>Admin</button></a>
+                    <button onclick = "linkFunction()" id = "linkButton" class ="button link">links</button>
+                
+                    <button onclick = "contactFunction()" id ="contactButton" class ="button contact">contact us</button>
+                    
+                    
+            
+        
+                </div>
+                <div id = "historyDiv" style = "display:block">
+                    Cafe 1912 is located at 243 S. Cooper, Memphis, TN, 38104.
+                     The building, like many in the area, was built in 1912; 
+                     hence the name. You can still see the date etched into the 
+                     facade on the corner building (Cooper/Peabody). Several businesses 
+                     have occupied this space: a shoe repair shop, Ruby Begonia's Pet Emporium,
+                     a photography studio, and a hair salon. We opened the kitchen side of the
+                     cafe in September of 2002. Five years later we opened the bar side of the restaurant.
+                </div>
+                
+
+               
+                <a href="userData.html"><button id = "adminButton">Admin</button></a>
             </div>
 
 
@@ -33,9 +51,12 @@
 
 <hr>
 
-    <footer>
-        Midtown 
-    </footer>
+<footer>
+    <a href = "https://www.instagram.com/cafe_1912/?hl=en"><img src = "./images/instagram.png" height = 20 width = 20></a>
+    Midtown
+    <a href = "facebook.com/cafe1912memphis/"><img src = "./images/facebook.png" height = 20 width = 20></a>
+</footer>
 </body>
-<script src = "app.js"></script>
+<!-- <script src = "app.js"></script> -->
+<script src = "about.js"></script>
 </html>

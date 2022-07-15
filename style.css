@@ -25,10 +25,12 @@ a:link{
 }
 a:hover{
     text-decoration: underline;
+    text-decoration-color:red;
 }
 
 a:visited{
-    text-decoration: none;
+    text-decoration: underline;
+    text-decoration-color:red;
     color:white;
 }
 
@@ -36,15 +38,28 @@ a:visited{
     padding: 5px;
     border: solid white 4px;
     margin-left: 5px;
+  
 
+}
+#telephone{
+  color:white;
+  background-color:red;
+  display: flex;
+  justify-content: center;
+  position: relative;
+  left: 0.5%;
+  top:-5vh;
+  margin:0px;
+  padding:0px;
+  height: 0px;
 }
 
 #navBar{
     background-color: black;
     display: inline-block;
-    word-spacing: 30px;
+    word-spacing: 40px;
     justify-content: center;
-    margin-top: 5px;
+    margin-top: 0px;
     color:white;
     font-family: 'Gulzar', cursive;
     margin:10px;
@@ -79,13 +94,39 @@ a:visited{
     height: 300px;
     border-radius: 5px;
 }
+#imageContainer{
+  color: white;
+  position:absolute;
+}
+#bottomLeft{
+  position: absolute;
+  bottom: 0px;
+  right: 10px;
+  font-size: 20px;
+  font-family:"Gulzar", cursive;
+}
+#bottomLeftRed{
+  position: absolute;
+  color:red;
+  bottom: 1px;
+  right: 11px;
+  font-size: 20px;
+  font-family:"Gulzar", cursive;
+}
+
+.randomImgContainer{
+  width:440px;
+  height:300px;
+}
 
 
 
 hr{
-    color:white;
+    color:red;
     width: 100%;
-    background-color: white;
+    background-color: red;
+    border:1px solid red;
+    margin-top: 2vh;
 }
 
 footer{
@@ -95,9 +136,10 @@ footer{
     font-size: 24px;
     height: 30px;
     padding-top: 0px;
-    display: grid;
-    justify-content: center;
-  
+    display: inline;
+    text-align: center;
+    
+    word-spacing: 30px;
   }
 
   /* this is where the reservation page starts */
@@ -105,15 +147,49 @@ footer{
   #formContainer{
     display: flex;
     justify-content: center;
-    background-color:red;
+    background-color:white;
     width: 440px;
     height: 300px;
     line-height: 140%;
+  }
 
+  #cssFormContainer{
+    text-align: center;
+    margin-top: 1vh;
+    background-color:black;
+    color:white;
+    height:280px;
+    width:420px;
+    padding:5px;
+  }
+  #last-name{
+    margin:10px;
+  }
+  #number-people{
+    margin:10px;
+  }
+  #time{
+    margin-top:10px;
+    margin-left: 10px;
+    margin-right: 10px;
+}
+  #date{
+    padding-bottom: -2vh;
+    background-color: white;
+    margin-left:10px;
+    margin-right:10px;
+  }
+  #submit-button{
+    margin:20px;
+    font-size:10px;
+    border: 2px solid red;
+    background-color:black;
+    color:white;
   }
 
   /* this is where the menu stuff is MENU MENU MENU */
 
+  
   #buttonRow{
     display: flex;
     background-color:white;
@@ -122,12 +198,14 @@ footer{
   .button{
     font-family: 'Gulzar', cursive;
     text-decoration: none;
-    background-color: white;
-    border: solid 1px white;
+    /* background-color: white; */
+    background-color: rgb(230, 225, 225);
+
+    border: solid 1px rgb(230, 225, 225);
     width: 25%;
   }
   #menuContainer{
-    background-color: white;
+    background-color: rgb(230, 225, 225);
     height: 87%;
     overflow:auto;
     line-height: 200%;
@@ -175,4 +253,37 @@ footer{
 /* Handle on hover */
 ::-webkit-scrollbar-thumb:hover {
   background: #555;
+}
+
+/* user data user data user data user data */
+#userDataTable{
+  border: 5px;
+}
+
+
+
+/* about me about me about me about me about me */
+#historyDiv{
+background-color:black;
+color: white;
+border: solid white 2px;
+padding: 5px;
+text-align:justify;
+font-size:12px;
+font-family:"Gulzar", cursive;
+
+}
+#aboutUsContainer{
+  background-color: black;
+    color: black;
+    width: 440px;
+    height: 300px;
+    border-radius: 5px;
+    overflow:auto;
+}
+#adminButton{
+  background-color:black;
+  color:white;
+  border: 1px solid red;
+  font-family: "Guzlar";
 }

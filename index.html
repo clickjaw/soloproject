@@ -1,3 +1,5 @@
+
+
 <!DOCTYPE html>
 <head>
 <link rel = "stylesheet" href = "style.css">
@@ -15,11 +17,16 @@
             <a href = "reservations.html">reserve</a>
             <a href = "about.html">about</a>
         </div>
-    
+        <div id = "telephone">901-722-2700</div>
         <div id = "mainContainer">
             <div id = "homeBodyContainer">
                 <div id = "imageContainer">
-                    <img src = "/home/clickjaw/code201/soloProject/soloproject/Solo Project/image1.jpg" alt id = "cafe 1912">
+
+                    <div id = "bottomLeft">tues-sat 5-9</div>
+
+                    <img id = "randomImgContainer" src = "" width= 440 height = 300>
+                    
+                   
                 </div>
             </div>
 
@@ -31,8 +38,16 @@
 <hr>
 
     <footer>
-        Midtown 
+        <a href = "https://www.instagram.com/cafe_1912/?hl=en"><img src = "./images/instagram.png" height = 20 width = 20></a>
+        <a href = "https://www.google.com/maps/place/Cafe+1912/@35.1318659,-89.9928275,17z/data=!3m1!4b1!4m5!3m4!1s0x887f80adf8c17357:0xef34a14808ff948e!8m2!3d35.1318659!4d-89.9906388">Midtown</a>
+        <a href = "facebook.com/cafe1912memphis/"><img src = "./images/facebook.png" height = 20 width = 20></a>
     </footer>
+    <script>
+        let randomNumber = Math.floor(Math.random() * 5);
+       let imgName = "images/image"+ randomNumber +".jpg";
+       document.getElementById('randomImgContainer').src=imgName;
+       console.log(imgName);
+   </script>
 </body>
 <script src = "app.js"></script>
 </html>
