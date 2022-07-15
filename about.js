@@ -1,6 +1,6 @@
 
 function historyFunction() {
-    let x = document.getElementById("functionDiv");
+    let x = document.getElementById("historyDiv");
     if (x.style.display !== "none") {
       x.style.display = "none";
     } else {
